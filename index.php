@@ -12,8 +12,9 @@ require_once "connexion.php";
 $sql = "
 SELECT
 id,
-Title,
-SRC
+title,
+category,
+displayable
 FROM
 Gifs
 ;";
@@ -25,8 +26,9 @@ $stmt->execute();
     <?php while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) :?>
         <tr>
             <td><?=$row["id"]?></td>
-            <td><?=$row["Title"]?></td>
-            <td><?=$row["SRC"]?></td>
+            <td><?=$row["title"]?></td>
+            <td><?=$row["category"]?></td>
+            <td><?=$row["displayable"]?></td>
             <td><img src="gif/<?=$row["id"]?>.gif" alt=""></td>
         </tr>
 

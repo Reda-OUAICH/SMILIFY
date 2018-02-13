@@ -2,14 +2,15 @@ USE Smilify;
 
 CREATE TABLE Gifs (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-  `Title` VARCHAR(50) NOT NULL,
-  `SRC` VARCHAR(50)NOT NULL,
+  `title` VARCHAR(50) NOT NULL,
+  `category` VARCHAR(50)NOT NULL,
+  `displayable` VARCHAR(5)NOT NULL,
    PRIMARY KEY (`id`)
 );
 
 INSERT INTO
   `Gifs`
-  (`id`,`Title`,`SRC`)
+  (`id`,`title`,`category`,`displayable`)
   VALUES
-  (NULL,'Verre Deau','gif/1.gif')
+  (NULL,'Verre Deau','All','Yes')
 ;
