@@ -1,0 +1,115 @@
+$color: white;
+$font: 'Raleway', Arial, sans-serif;
+
+body {
+  background-color: $color;
+  text-decoration: none;
+}
+
+.header {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+
+
+
+  &-navLogoImg {
+    height: 85px;
+    width: 200px;
+    margin-top: 40px;
+
+  }
+
+  &-navListItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 70px;
+    margin-left: auto;
+    color: black;
+
+  }
+
+  &-navItem {
+    margin-left: 40px;
+    font-family: $font;
+    font-weight: 500;
+    font-size: 17px;
+  }
+
+  &-navItemLink {
+    color: black;
+  }
+
+  &-navItemPlus{
+    height: 12px;
+    width: 12px;
+
+  }
+}
+
+.section-gifTitle {
+  font-family: $font;
+  color: black;
+  font-weight: thin;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+
+}
+
+.section-gif {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+}
+// Page ANIMALS
+.backBtn{
+  color: #fff;
+  background: #000;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 60px 0 0 150px;
+  font-size: 16px;
+  font-family: $font;
+}
+
+.titles {
+  font-family: $font;
+  margin-left: 150px;
+  margin-top: 40px;
+}
+
+.mainContainer {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+}
+
+.boxLeft,
+.boxRight {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.boxCenter {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.img {
+  margin-bottom: 25px;
+  transition: 0.7s;
+}
