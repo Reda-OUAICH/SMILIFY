@@ -48,12 +48,15 @@ $stmt->execute();
             margin-left: 10px;
         }
 
+
         button{
             width: 70px;
             height: 40px;
             font-size: 22px;
             border: 1px solid black;
             border-radius: 5px;
+            margin-top: 40px;
+            margin-left: 46%;
         }
 
 
@@ -86,12 +89,12 @@ if (isset($_GET['error'])) {
             <td><?=$row["category"]?></td>
             <td><?=$row["displayable"]?></td>
             <td>
-                <a href="#">Update</a>
+                <a href="update.php?id=<?=$row["id"]?>">Update</a>
                 <a href="dodelete.php?id=<?=$row["id"]?>">Delete</a>
             </td>
         </tr>
      <?php endwhile;?>
     </table>
-    <a href="add.php"><button>Add</button></a>
+    <a href="add.php" class="btn"><button>Add</button></a>
 </body>
 </html>
