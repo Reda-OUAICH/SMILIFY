@@ -12,13 +12,11 @@ $admin = $stmt->fetch(PDO::FETCH_ASSOC);
 
 
 if (!isset($_POST['password']) || ($_POST['password'])!==$admin['password']) {
-    session_start();
-    unset($_SESSION['admin']);
     header('Location: ../index.php?error=nop');
     exit;
 } else {
     session_start();
     $_SESSION['admin'] = 'yes';
-    header('Location: index.php?error=Welcome');
+    header('Location: index.php?message=Welcome');
     exit;
 }

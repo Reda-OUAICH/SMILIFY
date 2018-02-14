@@ -73,6 +73,13 @@ if (isset($_GET['error'])) {
     <?php
 }
 ?>
+<?php
+if (isset($_GET['message'])) {
+    ?>
+    <div style="color: green; font-size: 35px"><?=$_GET['message']?></div>
+    <?php
+}
+?>
 
 <table>
     <h1>Smilify</h1>

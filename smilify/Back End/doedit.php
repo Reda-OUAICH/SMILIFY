@@ -21,4 +21,4 @@ $stmt->bindValue(':category', $_POST['category']);
 $stmt->bindValue(':displayable', $_POST['displayable']);
 $stmt->bindValue(':id', $_POST['id']);
 $stmt->execute();
-header('Location: index.php?error=OK');
+header('Location: index.php?message=OK');
