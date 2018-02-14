@@ -1,8 +1,8 @@
-#Semaine Intensive PHP groupe 23
+# Semaine Intensive PHP groupe 23
 
-##Database mySQL via mySQL Workbench :
+## Database mySQL via mySQL Workbench :
 
-###Copy this:
+### Copy this:
 
 USE Smilify;
 
@@ -51,4 +51,4 @@ INSERT INTO
   ('bonbon')
 ;
 
-###END
+### END
