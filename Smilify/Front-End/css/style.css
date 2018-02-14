@@ -34,8 +34,10 @@ body {
     font-weight: 900;
     font-size: 17px; }
   .header-navItemLink {
+    cursor: pointer;
     color: black; }
   .header-navItemPlus {
+    cursor: pointer;
     height: 12px;
     width: 12px; }
 
