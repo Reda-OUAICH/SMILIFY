@@ -32,8 +32,8 @@ $gifIndex = 0;
 
 while(false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)):
     $gifs[] = $row;
- endwhile;
- ?>
+endwhile;
+?>
 
 
 
