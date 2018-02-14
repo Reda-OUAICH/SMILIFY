@@ -107,6 +107,6 @@ if (isset($_GET['message'])) {
 </table>
 
 <a href="add.php" class="btn"><button>Add</button></a>
-<a href="../index.php">le Front</a>
+<a href="../index.php">RETURN TO FRONT</a>
 </body>
 </html>

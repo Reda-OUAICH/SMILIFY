@@ -14,7 +14,8 @@ $requete = "SELECT
   `id`,
   `title`, 
   `category`, 
-  `displayable` 
+  `displayable`,
+  `src`
 FROM 
   `Gifs`
 WHERE
@@ -83,7 +84,7 @@ endwhile;?>
 <div class="sectionContainer">
     <h1 class="section-gifTitle"><?=$gifs[$gifIndex]["title"]?></h1>
     <div class="section-gif">
-        <img class="gif" src="Front-End/css/image/<?=$gifs[$gifIndex]["title"]?>.gif" alt="">
+        <img class="gif" src="<?=$gifs[$gifIndex]["src"]?>.gif" alt="">
     </div>
 </div>
 
