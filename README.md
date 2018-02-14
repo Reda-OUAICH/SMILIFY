@@ -32,7 +32,7 @@ mysqladmin -u root -p password 'password'
 
 ## Database mySQL via mySQL Workbench :
 
-### Copy this:
+### Copy this on mySQL workbench (START database):
 
 
 
