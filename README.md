@@ -28,16 +28,15 @@ CREATE table "table_name";
 mysqladmin -u root -p password 'password'
 
 
-
-
 ## Database mySQL via mySQL Workbench :
 
 ### Copy this on mySQL workbench (START database):
 
 
+DROP CREATE SCHEMA IF EXISTS Smilify;
 
 USE Smilify;
-DROP CREATE SCHEMA IF EXISTS Smilify;
+
 DROP TABLE IF EXISTS Gifs;
 
 CREATE TABLE Gifs (
@@ -45,8 +44,11 @@ CREATE TABLE Gifs (
   `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
 
   `title` VARCHAR(50) NOT NULL,
+
   `category` VARCHAR(50)NOT NULL,
+
   `displayable` VARCHAR(5)NOT NULL,
+
    PRIMARY KEY (`id`)
 
 );
