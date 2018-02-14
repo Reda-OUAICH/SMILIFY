@@ -1,4 +1,5 @@
 <?php
+require_once "checkAdmin.php";
 
 if (!isset($_GET['id'])) {
     header('Location: index.php?error=nopostdatadelete');

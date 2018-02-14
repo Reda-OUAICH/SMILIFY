@@ -1,10 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: TomTom
- * Date: 13/02/2018
- * Time: 12:38
- */
+require_once "checkAdmin.php";
+
 if ( ($_POST['title']==='') || ($_POST['category']==='- -') || ($_POST['displayable']==='- -')) {
     header('Location: index.php?error=Missing field');
     exit;

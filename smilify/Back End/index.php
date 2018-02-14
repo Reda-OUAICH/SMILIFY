@@ -6,6 +6,8 @@
  * Time: 16:30
  */
 
+require_once "checkAdmin.php";
+
 require_once "connexion.php";
 
 
@@ -89,12 +91,13 @@ if (isset($_GET['error'])) {
             <td><?=$row["category"]?></td>
             <td><?=$row["displayable"]?></td>
             <td>
-                <a href="update.php?id=<?=$row["id"]?>">Update</a>
+                <a href="edit.php?id=<?=$row["id"]?>">Edit</a>
                 <a href="dodelete.php?id=<?=$row["id"]?>">Delete</a>
             </td>
         </tr>
      <?php endwhile;?>
     </table>
     <a href="add.php" class="btn"><button>Add</button></a>
+    <a href="../index.php">le Front</a>
 </body>
 </html>

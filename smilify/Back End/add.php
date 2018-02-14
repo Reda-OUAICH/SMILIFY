@@ -1,6 +1,7 @@
 <?php
-    require_once "connexion.php";
-    ?>
+require_once "checkAdmin.php";
+require_once "connexion.php";
+?>
 
 <html>
 <head>
