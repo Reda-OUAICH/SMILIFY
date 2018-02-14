@@ -14,3 +14,4 @@ $stmt = $conn->prepare($requete);
 $stmt->bindValue(':id', $_GET['id']);
 $stmt->execute();
 header('Location: index.php');
+exit;
