@@ -38,7 +38,7 @@ $stmt->execute();
         }
 
         td {
-            border: 2px solid black;
+            border: 1px solid black;
             font-size: 20px;
         }
 
@@ -82,7 +82,7 @@ if (isset($_GET['message'])) {
 ?>
 
 <h1>Smilify</h1>
-<table>
+<table border="1"  cellspacing="0" cellpadding="0">
     <tr>
         <th>id</th>
         <th>Title</th>

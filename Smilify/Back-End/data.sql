@@ -38,13 +38,13 @@ INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`) VALUES (25,'ah','Cree
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`) VALUES (26,'Hello Cuty','Creepy','No');
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`) VALUES (27,'Creepy3','Creepy','No');
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`) VALUES (28,'Little','Creepy','Yes');
-INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`) VALUES (29,'Very Good ','Creepy','Yes');
+INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`) VALUES (29,'Very Good','Creepy','Yes');
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`) VALUES (30,'Werd','Creepy','No');
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`) VALUES (31,'Humm','Creepy','Yes');
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`) VALUES (32,'Trump','Trump','Yes');
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`) VALUES (33,'Again Trump','Trump','No');
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`) VALUES (34,'Again Again Trump','Trump','Yes');
-INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`) VALUES (35,'Oh Trump ','Trump','Yes');
+INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`) VALUES (35,'Oh Trump','Trump','Yes');
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`) VALUES (36,'This is Trump','Trump','No');
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`) VALUES (37,'Trump Anime','Trump','No');
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`) VALUES (38,'Trump Smile','Trump','No');

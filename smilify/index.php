@@ -35,6 +35,6 @@ while(false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)):
  endwhile;?>
 
 
-<img src="Front End/css/image/<?=$gifs[$gifIndex]["title"]?>.gif" alt="">
+
 
 <a href="Back%20End/login.php">login</a>
