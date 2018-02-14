@@ -1,5 +1,6 @@
-
 <?php
+require_once "checkAdmin.php";
+
 if (!isset($_GET['id'])) {
     header('Location: index.php?error=noidprovidededit');
     exit;
@@ -46,7 +47,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
     <?php require_once 'optionGen.php' ?>
 
 
-    <input type="submit" name="" value="Update">
+    <input type="submit" name="" value="Edit">
 
 </form>
 <a href="index.php"><button><-</button></a>

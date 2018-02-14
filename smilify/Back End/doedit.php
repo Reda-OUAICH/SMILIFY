@@ -1,10 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: TomTom
- * Date: 13/02/2018
- * Time: 16:19
- */
+require_once "checkAdmin.php";
+
 if (!isset($_POST['id']) || ($_POST['title']==='') || ($_POST['category']==='- -') || ($_POST['displayable']==='- -') ) {
     header('Location: index.php?error=not accepted :\'(');
     exit;
