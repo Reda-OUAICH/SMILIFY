@@ -31,7 +31,7 @@ body {
 .section-gifTitle {
   font-family: "Raleway", Arial, sans-serif;
   color: black;
-  font-weight: thin;
+  font-weight: 100;
   font-size: 16px;
   display: flex;
   justify-content: center;
@@ -64,7 +64,7 @@ body {
   margin-right: 50px;
   margin-top: 50px;
   display: flex;
-  align-items: top;
+  align-items: flex-start;
   justify-content: center; }
 
 .boxLeft,

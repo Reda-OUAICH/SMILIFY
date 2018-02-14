@@ -42,7 +42,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
     <input type="hidden" name="id" value="<?=$row['id']?>">
 
     <label for="title">Title: </label>
-    <input type="text" name="title" value="<?=$row["title"]?>">
+    <input id="title" type="text" name="title" value="<?=$row["title"]?>">
 
     <?php require_once 'optionGen.php' ?>
 

@@ -20,10 +20,10 @@ require_once "connexion.php";
 
 
     <label for="title">Title: </label>
-    <input type="text" name="title" value="">
+    <input id="title" type="text" name="title" value="">
 
     <label for="category">Category: </label>
-    <select class="" name="category">
+    <select id="category" class="" name="category">
         <option value="- -">- -</option>
         <option value="Animals">Animals</option>
       <option value="Trump">Trump</option>
@@ -33,7 +33,7 @@ require_once "connexion.php";
     </select>
 
     <label for="displayable">Displayable: </label>
-    <select class="" name="displayable">
+    <select id="displayable" class="" name="displayable">
         <option value="- -">- -</option>
       <option value="Yes">Yes</option>
       <option value="No">No</option>
