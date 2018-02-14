@@ -46,13 +46,12 @@ body {
   font-size: 16px;
   display: flex;
   justify-content: center;
-<<<<<<< HEAD:Smilify/Front-End/css/style.css
+
   margin-top: 80px; }
-=======
-  margin-top: 120px;
-  text-transform: uppercase;
-}
->>>>>>> b5f25c253f2c0c40c30c09619f89957929affa2a:smilify/Front End/css/style.css
+
+
+
+
 
 .section-gif {
   width: 50vw;
@@ -60,7 +59,7 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  margin-top: 30px; }
+  }
 .gif {
   width: 100%;
 }
