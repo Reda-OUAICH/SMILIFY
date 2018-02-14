@@ -19,3 +19,4 @@ $stmt->bindValue(':displayable', $_POST['displayable']);
 $stmt->execute();
 header('Location: index.php');
 exit;
+
