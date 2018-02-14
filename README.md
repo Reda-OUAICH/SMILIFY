@@ -88,8 +88,6 @@ INSERT INTO
 
 ;
 
-
-
 DROP TABLE IF EXISTS Admin;
 
 CREATE TABLE Admin (
@@ -112,4 +110,6 @@ INSERT INTO
 
 ;
 
-### END Database;
+
+
+### END
