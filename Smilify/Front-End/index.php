@@ -38,7 +38,9 @@
     </ul>
   </header>
 
-  <h1 class="section-gifTitle">Chat</h1>
+
+  <h1 class="section-gifTitle">Titre</h1>
+
 
   <div class="section-gif">
     <?php
