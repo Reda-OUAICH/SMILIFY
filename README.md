@@ -37,7 +37,7 @@ mysqladmin -u root -p password 'password'
 
 
 USE Smilify;
-
+DROP CREATE SCHEMA IF EXISTS Smilify;
 DROP TABLE IF EXISTS Gifs;
 
 CREATE TABLE Gifs (
