@@ -16,7 +16,8 @@ SELECT
 id,
 title,
 category,
-displayable
+displayable,
+src
 FROM
 Gifs
 ;";
@@ -88,7 +89,7 @@ if (isset($_GET['message'])) {
         <th>Title</th>
         <th>Category</th>
         <th>Displayable</th>
-        <th> </th>
+        <th>SRC</th>
     </tr>
     <?php while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) :?>
         <tr>
@@ -96,6 +97,7 @@ if (isset($_GET['message'])) {
             <td><?=$row["title"]?></td>
             <td><?=$row["category"]?></td>
             <td><?=$row["displayable"]?></td>
+            <td><?=$row["src"]?></td>
             <td>
                 <a href="edit.php?id=<?=$row["id"]?>">Edit</a>
                 <a href="dodelete.php?id=<?=$row["id"]?>">Delete</a>

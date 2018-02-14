@@ -39,6 +39,9 @@ require_once "connexion.php";
       <option value="No">No</option>
     </select>
 
+      <label for="src">SRC: </label>
+      <input id="src" type="text" name="src" value="">
+
     <input type="submit" name="" value="Submit">
 
   </form>

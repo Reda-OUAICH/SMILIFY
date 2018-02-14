@@ -10,7 +10,8 @@ $requete = "SELECT
   `id`, 
   `title`, 
   `category`,
-  `displayable`
+  `displayable`,
+  `src`
 FROM 
   `Gifs`
 WHERE
@@ -46,6 +47,8 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
     <?php require_once 'optionGen.php' ?>
 
+    <label for="src">Title: </label>
+    <input id="src" type="src" name="src" value="<?=$row["src"]?>">
 
     <input type="submit" name="" value="Edit">
 
