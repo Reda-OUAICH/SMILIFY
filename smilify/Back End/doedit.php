@@ -22,3 +22,4 @@ $stmt->bindValue(':displayable', $_POST['displayable']);
 $stmt->bindValue(':id', $_POST['id']);
 $stmt->execute();
 header('Location: index.php?message=OK');
+exit;

@@ -81,16 +81,15 @@ if (isset($_GET['message'])) {
 }
 ?>
 
+<h1>Smilify</h1>
 <table>
-    <h1>Smilify</h1>
-    <table>
-        <tr>
-            <th>id</th>
-            <th>Title</th>
-            <th>Category</th>
-            <th>Displayable</th>
-            <th>Options</th>
-        </tr>
+    <tr>
+        <th>id</th>
+        <th>Title</th>
+        <th>Category</th>
+        <th>Displayable</th>
+        <th> </th>
+    </tr>
     <?php while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) :?>
         <tr>
             <td><?=$row["id"]?></td>
@@ -102,9 +101,10 @@ if (isset($_GET['message'])) {
                 <a href="dodelete.php?id=<?=$row["id"]?>">Delete</a>
             </td>
         </tr>
-     <?php endwhile;?>
-    </table>
-    <a href="add.php" class="btn"><button>Add</button></a>
-    <a href="../index.php">le Front</a>
+    <?php endwhile;?>
+</table>
+
+<a href="add.php" class="btn"><button>Add</button></a>
+<a href="../index.php">le Front</a>
 </body>
 </html>

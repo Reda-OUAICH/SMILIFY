@@ -11,7 +11,7 @@ require_once 'adminUnset.php';
 <form class="form" action="dologin.php" method="post">
 
 
-    <label>Password: </label><input autocomplete="off" type="password" name="password" value="" autofocus>
+    <label for="password">Password: </label><input id="password" autocomplete="off" type="password" name="password" value="" autofocus>
 
     <input type="submit" name="" value="Submit">
 

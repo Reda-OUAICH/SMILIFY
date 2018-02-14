@@ -3,7 +3,7 @@
 
 
 <label for="category">Category: </label>
-<select class="" name="category">
+<select id="category" class="" name="category">
 
 
 
@@ -17,7 +17,7 @@ foreach ($categories as $category) { ?>
             echo "selected='selected'";
         }
         ?>
-        value="<?=$category?>"><?=$category?></option>
+        value="<?=$category?>"> <?=$category?></option>
 <?php } ?>
 
 
@@ -25,19 +25,19 @@ foreach ($categories as $category) { ?>
 
 
 <label for="displayable">Displayable: </label>
-<select class="" name="displayable">
+<select id="displayable" class="" name="displayable">
 
     <?php
-    $displayable = ['- -', 'Yes', 'No'];
+    $displayables = ['- -', 'Yes', 'No'];
 
-    foreach ($displayable as $displayable) { ?>
+    foreach ($displayables as $displayable) { ?>
         <option
             <?php
             if ($displayable === $row["displayable"]) {
                 echo "selected='selected'";
             }
             ?>
-            value="<?=$displayable?>"><?=$displayable?></option>
+            value="<?=$displayable?>"> <?=$displayable?></option>
     <?php } ?>
 
 </select>
