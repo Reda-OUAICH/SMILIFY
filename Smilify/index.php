@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Back End/adminUnset.php';
+require_once 'Back-End/adminUnset.php';
 
 
 if (isset($_GET['error'])) {
@@ -9,7 +9,7 @@ if (isset($_GET['error'])) {
     <?php
 }
 
-require_once "Back End/connexion.php";
+require_once "Back-End/connexion.php";
 $requete = "SELECT 
   `id`,
   `title`, 
@@ -32,9 +32,10 @@ $gifIndex = 0;
 
 while(false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)):
     $gifs[] = $row;
- endwhile;?>
+ endwhile;
+ ?>
 
 
 
 
-<a href="Back%20End/login.php">login</a>
+<a href="Back-End/login.php">login</a>

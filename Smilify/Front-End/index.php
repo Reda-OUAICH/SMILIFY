@@ -43,7 +43,8 @@
 
 
   <div class="section-gif">
-    <?php
+
+      <?php
 
 require_once '../Back-End/adminUnset.php';
 
