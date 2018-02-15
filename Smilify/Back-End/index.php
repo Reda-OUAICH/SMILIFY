@@ -6,7 +6,7 @@
  * Time: 16:30
  */
 
-require_once "checkAdmin.php";
+require "checkAdmin.php";
 
 require_once "connexion.php";
 
@@ -23,6 +23,19 @@ Gifs
 ;";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
+
+$sql2 = "
+SELECT
+id,
+title,
+category,
+displayable,
+src
+FROM
+NewGifs
+;";
+$stmt2 = $conn->prepare($sql2);
+$stmt2->execute();
 ?>
 <!doctype html>
 <html lang="en">
@@ -108,5 +121,29 @@ if (isset($_GET['message'])) {
 
 <a href="add.php" class="btn"><button>Add</button></a>
 <a href="../index.php">RETURN TO FRONT</a>
+
+<h1>Waiting list</h1>
+<table border="1"  cellspacing="0" cellpadding="0">
+    <tr>
+        <th>id</th>
+        <th>Title</th>
+        <th>Category</th>
+        <th>Displayable</th>
+        <th>SRC</th>
+    </tr>
+    <?php while (false !== $row2 = $stmt2->fetch(PDO::FETCH_ASSOC)) :?>
+        <tr>
+            <td><?=$row2["id"]?></td>
+            <td><?=$row2["title"]?></td>
+            <td><?=$row2["category"]?></td>
+            <td><?=$row2["displayable"]?></td>
+            <td><?=$row2["src"]?></td>
+            <td>
+                <a href="accept.php?action=accept&id=<?=$row2["id"]?>&title=<?=$row2["title"]?>&category=<?=$row2["category"]?>&displayable=<?=$row2["displayable"]?>&src=<?=$row2["src"]?>">Accept</a>
+                <a href="accept.php?action=refuse&id=<?=$row2["id"]?>">Refuse</a>
+            </td>
+        </tr>
+    <?php endwhile;?>
+</table>
 </body>
 </html>

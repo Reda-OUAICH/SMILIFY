@@ -5,7 +5,7 @@
  * Date: 14/02/2018
  * Time: 06:23
  */
-require_once 'adminUnset.php';
+require 'adminUnset.php';
 ?>
 
 <form class="form" action="dologin.php" method="post">
