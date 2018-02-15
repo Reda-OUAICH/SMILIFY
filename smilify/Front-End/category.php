@@ -69,7 +69,7 @@ while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) {
   <a class="backBtn" href="../index.php">
     BACK
   </a>
-  <h1 class="titles"><span class="blueHashtag">#</span>ANIMALS</h1>
+  <h1 class="titles"><span class="blueHashtag">#</span><?= $_GET['category'] ?></h1>
 
   <div class="gifContainer">
       <?php foreach ($cols as $col) { ?>

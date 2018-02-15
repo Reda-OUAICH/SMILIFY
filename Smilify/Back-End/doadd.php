@@ -16,7 +16,7 @@ $stmt = $conn->prepare($requete);
 $stmt->bindValue(':title', htmlentities($_POST['title']));
 $stmt->bindValue(':category', $_POST['category']);
 $stmt->bindValue(':displayable', $_POST['displayable']);
-$stmt->bindValue(':src', htmlentities($_POST['src']));
+$stmt->bindValue(':src', $_POST['src']);
 $stmt->execute();
 
 header('Location: index.php');

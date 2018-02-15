@@ -8,6 +8,9 @@ require_once "../Back-End/connexion.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../Front-End/css/reset.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="../Front-End/css/style.css" type="text/css" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,800" rel="stylesheet">
     <title>Document</title>
     <style media="screen">
         label {
@@ -16,11 +19,12 @@ require_once "../Back-End/connexion.php";
     </style>
 </head>
 <body>
+
+
+<div class="formContainer" style="margin-top: 400px">
 <form class="form" action="doadd.php" method="post">
 
-
-    <label for="title">Title: </label>
-    <input id="title" type="text" name="title" value="">
+    <input id="title" type="text" name="title" value="" placeholder="Title">
 
     <label for="category">Category: </label>
     <select id="category" class="" name="category">
@@ -39,13 +43,12 @@ require_once "../Back-End/connexion.php";
         <option value="No">No</option>
     </select>
 
-    <label for="src">URL: </label>
-    <input id="src" type="text" name="src" value="">
+    <input id="src" type="text" name="src" value="" placeholder="URL" style="margin-left: 20px">
 
     <input type="submit" name="" value="Submit">
 
-</form>
-<a href="../index.php"><button><-</button></a>
+</form><a href="../index.php" style="margin-top: 50px"><button>BACK</button></a>
+</div>
 
 </body>
 </html>

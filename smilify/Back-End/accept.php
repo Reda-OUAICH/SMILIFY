@@ -28,13 +28,13 @@ if ($_GET['action'] === 'accept') {
     $stmt->execute();
 }
 
-$requete = "DELETE FROM 
+$requete2 = "DELETE FROM 
 `NewGifs` 
 WHERE 
 id = :id;";
-$stmt = $conn->prepare($requete);
-$stmt->bindValue(':id', $_GET['id']);
-$stmt->execute();
+$stmt2 = $conn->prepare($requete2);
+$stmt2->bindValue(':id', $_GET['id']);
+$stmt2->execute();
 
 header('Location: index.php?message=Done');
 exit;

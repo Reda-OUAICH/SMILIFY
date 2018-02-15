@@ -2,6 +2,7 @@ body {
   background-color: #fbfbfb;
   text-decoration: none;
   overflow-x: hidden;
+  font-family: "Raleway", Arial, sans-serif;
 }
 
 .mainSection {
@@ -86,6 +87,7 @@ body {
   font-family: "Raleway", Arial, sans-serif;
   margin: 40px 0 0 130px;
   font-weight: 900;
+  text-transform: uppercase;
 }
 
 .gifContainer {
@@ -113,4 +115,31 @@ body {
 
 .blueHashtag {
   color: #55D6CB;
+}
+
+.adminLoginTitle {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 28px;
+  margin-top: 300px;
+  margin-bottom: 50px;
+}
+
+.formContainer {
+  font-family: "Raleway", Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.mainTitle {
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.littleText {
+  font-size: 26px;
+  opacity: 0.5;
 }
