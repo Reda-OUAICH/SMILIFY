@@ -19,7 +19,6 @@ INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (NULL,'T
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (NULL,'Dog Big Smile','Animals','Yes','css/image/Animals6');
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (NULL,'Turtle','Animals','Yes','css/image/Animals7');
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (NULL,'BG','Animals','Yes','css/image/Animals8');
--- INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (NULL,'Yes Yes','Animals','Yes','css/image/Animals9');
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (NULL,'Rabbit','Animals','Yes','css/image/Animals10');
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (NULL,'Loutres','Animals','Yes','css/image/Animals11');
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (NULL,'Cat','Animals','Yes','css/image/Animals12');
@@ -41,7 +40,6 @@ INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (NULL,'C
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (NULL,'Little','Creepy','Yes','css/image/Creepy4');
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (NULL,'Very Good','Creepy','Yes','css/image/Creepy5');
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (NULL,'Werd','Creepy','Yes','css/image/Creepy6');
-INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (NULL,'Humm','Creepy','Yes','css/image/Creepy7');
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (NULL,'Trump','Trump','Yes','css/image/Trump1');
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (NULL,'Again Trump','Trump','Yes','css/image/Trump2');
 INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (NULL,'Again Again Trump','Trump','Yes','css/image/Trump3');
