@@ -89,3 +89,19 @@ INSERT INTO
   VALUES
   ('bonbon')
 ;
+
+
+
+DROP TABLE IF EXISTS NewGifs;
+
+CREATE TABLE NewGifs (
+  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(50) NOT NULL,
+  `category` VARCHAR(50)NOT NULL,
+  `displayable` VARCHAR(5)NOT NULL,
+  `src` VARCHAR(100)NOT NULL,
+   PRIMARY KEY (`id`)
+);
+
+INSERT INTO `NewGifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (1,'BABY SMILING','-','Yes','https://media.giphy.com/media/kRoDIvG3Yez28/giphy-downsized.gif');
+INSERT INTO `NewGifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (2,' RON SWANSON SMILING','Creepy','Yes','https://media.giphy.com/media/68Ms7xo0ktbZS/giphy.gif');
