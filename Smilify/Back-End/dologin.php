@@ -11,7 +11,7 @@ $stmt->execute();
 $admin = $stmt->fetch(PDO::FETCH_ASSOC);
 
 
-if (!isset($_POST['password']) || ($_POST['password'])!==$admin['password']) {
+if (!isset($_POST['password']) || !password_verify($_POST['password'], $admin['password'])) {
     header('Location: ../index.php?error=nop');
     exit;
 } else {

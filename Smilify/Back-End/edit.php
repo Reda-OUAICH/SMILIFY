@@ -47,7 +47,7 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
     <?php require_once 'optionGen.php' ?>
 
-    <label for="src">Title: </label>
+    <label for="src">Src: </label>
     <input id="src" type="src" name="src" value="<?=$row["src"]?>">
 
     <input type="submit" name="" value="Edit">

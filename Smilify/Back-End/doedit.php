@@ -17,10 +17,10 @@ WHERE
 id = :id
 ;";
 $stmt = $conn->prepare($requete);
-$stmt->bindValue(':title', $_POST['title']);
+$stmt->bindValue(':title', htmlentities($_POST['title']));
 $stmt->bindValue(':category', $_POST['category']);
 $stmt->bindValue(':displayable', $_POST['displayable']);
-$stmt->bindValue(':src', $_POST['src']);
+$stmt->bindValue(':src', htmlentities($_POST['src']));
 $stmt->bindValue(':id', $_POST['id']);
 $stmt->execute();
 header('Location: index.php?message=OK');

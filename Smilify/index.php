@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Back-End/adminUnset.php';
+require 'Back-End/adminUnset.php';
 
 
 if (isset($_GET['error'])) {
@@ -18,22 +18,16 @@ $requete = "SELECT
   `src`
 FROM 
   `Gifs`
-WHERE
-  `displayable` = :displayable
 ORDER BY RAND()
+LIMIT 1
 ;";
 $stmt = $conn->prepare($requete);
-$stmt->bindValue(':displayable', 'Yes');
 $stmt->execute();
 
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
 
 
-$gifs = [];
-$gifIndex = 0;
-
-while(false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)):
-    $gifs[] = $row;
-endwhile;?>
+?>
 
 
 <!DOCTYPE html>
@@ -60,31 +54,38 @@ endwhile;?>
     <img class="header-navLogoImg" src="./Front-End/css/logo/logo.svg" alt="">
     <ul class="header-navListItem">
         <li class="header-navItem">
-            <a href="Front-End/animals.html" class="header-navItemLink"><span class="blueHashtag">#</span>Animals</a>
+            <a href="Front-End/category.php?category=Animals" class="header-navItemLink"><span class="blueHashtag">#</span>Animals</a>
         </li>
         <li class="header-navItem">
-            <a href="Front-End/trump.html" class="header-navItemLink"><span class="blueHashtag">#</span>Trump</a>
+            <a href="Front-End/category.php?category=Trump" class="header-navItemLink"><span class="blueHashtag">#</span>Trump</a>
         </li>
         <li class="header-navItem">
-            <a href="Front-End/creepy.html" class="header-navItemLink"><span class="blueHashtag">#</span>Creepy</a>
+            <a href="Front-End/category.php?category=Creepy" class="header-navItemLink"><span class="blueHashtag">#</span>Creepy</a>
         </li>
         <li class="header-navItem">
-            <a href="Front-End/anime.html" class="header-navItemLink"><span class="blueHashtag">#</span>Anime</a>
+            <a href="Front-End/category.php?category=Anime" class="header-navItemLink"><span class="blueHashtag">#</span>Anime</a>
         </li>
         <li class="header-navItem">
-            <a href="Front-End/all.html" class="header-navItemLink"><span class="blueHashtag">#</span>All</a>
+            <a href="Front-End/category.php?category=All" class="header-navItemLink"><span class="blueHashtag">#</span>All</a>
         </li>
         <li class="header-navItem">
-            <img class="header-navItemPlus" src="./Front-End/css/image/add-button.svg" alt="">
-            <a href="+" class="header-navItemLink-Plus"></a>
+            <a href="Front-End/add.php" class="header-navItemLink-Plus">
+                <img class="header-navItemPlus" src="./Front-End/css/image/add-button.svg" alt="">
+            </a>
         </li>
     </ul>
 </header>
 
 <div class="sectionContainer">
-    <h1 class="section-gifTitle"><?=$gifs[$gifIndex]["title"]?></h1>
+    <h1 class="section-gifTitle"><?=$row["title"]?></h1>
     <div class="section-gif">
-        <img class="gif" src="<?=$gifs[$gifIndex]["src"]?>.gif" alt="">
+        <?php
+        if (substr($row["src"], 0, 5) == 'https') { ?>
+            <img class="gif" src="<?=$row["src"]?>" alt="">
+        <?php } else {?>
+            <img class="gif" src="Front-End/<?=$row["src"]?>.gif" alt="">
+        <?php } ?>
+
     </div>
 </div>
 
