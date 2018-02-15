@@ -1,5 +1,9 @@
 # Semaine Intensive PHP groupe 23
 
+
+## SITE-MAP
+<img width="893" alt="capture d ecran 2018-02-15 a 20 55 57" src="https://user-images.githubusercontent.com/33249082/36278015-cbc0d582-1292-11e8-8e0b-b4164167bfa6.png">
+
 ## Basic commands mySQL:
 
 
