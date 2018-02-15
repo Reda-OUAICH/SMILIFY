@@ -65,6 +65,9 @@ body {
   }
 .gif {
   width: 100%;
+  border: 2px solid aquamarine;
+  box-shadow: 2px 3px 10px grey;
+  margin-top: 5px ;
 }
 
 .backBtn {
