@@ -79,7 +79,7 @@ INSERT INTO `Gifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (NULL,'Y
 DROP TABLE IF EXISTS Admin;
 
 CREATE TABLE Admin (
-  `password` VARCHAR(10) NOT NULL,
+  `password` VARCHAR(60) NOT NULL,
    PRIMARY KEY (`password`)
 );
 
@@ -87,7 +87,7 @@ INSERT INTO
   `Admin`
   (`password`)
   VALUES
-  ('bonbon')
+  ('$2y$10$PxMvbVO7o42PQJ.T16BT7OapT.OUoMY63LkfkVoaXX8JcJrE6H4P2')
 ;
 
 
@@ -103,5 +103,5 @@ CREATE TABLE NewGifs (
    PRIMARY KEY (`id`)
 );
 
-INSERT INTO `NewGifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (1,'BABY SMILING','-','Yes','https://media.giphy.com/media/kRoDIvG3Yez28/giphy-downsized.gif');
-INSERT INTO `NewGifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (2,' RON SWANSON SMILING','Creepy','Yes','https://media.giphy.com/media/68Ms7xo0ktbZS/giphy.gif');
+INSERT INTO `NewGifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (NULL,'BABY SMILING','-','Yes','https://media.giphy.com/media/kRoDIvG3Yez28/giphy-downsized.gif');
+INSERT INTO `NewGifs` (`id`,`title`,`category`,`displayable`,`src`) VALUES (NULL,' RON SWANSON SMILING','Creepy','Yes','https://media.giphy.com/media/68Ms7xo0ktbZS/giphy.gif');
