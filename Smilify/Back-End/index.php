@@ -10,30 +10,31 @@ require "checkAdmin.php";
 
 require_once "connexion.php";
 
+//select the columns from 'Gifs'
 
-$sql = "
-SELECT
-id,
-title,
-category,
-displayable,
-src
-FROM
-Gifs
+$sql = "SELECT
+    `id`,
+    `title`,
+    `category`,
+    `displayable`,
+    `src`
+  FROM
+  `Gifs`
 ;";
+
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 
-$sql2 = "
-SELECT
-id,
-title,
-category,
-displayable,
-src
-FROM
-NewGifs
+$sql2 = "SELECT
+    `id`,
+    `title`,
+    `category`,
+    `displayable`,
+    `src`
+  FROM
+  `NewGifs`
 ;";
+
 $stmt2 = $conn->prepare($sql2);
 $stmt2->execute();
 ?>
@@ -56,7 +57,7 @@ $stmt2->execute();
 
         td {
             border: 1px solid black;
-            font-size: 20px;
+            font-size: 18px;
         }
 
         table {
@@ -78,6 +79,14 @@ $stmt2->execute();
             margin-left: 46%;
         }
 
+        .secText{
+           margin-top:  50px;
+        }
+
+        .secTab{
+            margin-bottom:40px;
+            margin-top: 40px;
+        }
 
     </style>
 </head>
@@ -125,8 +134,8 @@ if (isset($_GET['message'])) {
 <a href="add.php" class="btn"><button>Add</button></a>
 <a href="../index.php">RETURN TO FRONT</a>
 
-<h1>Waiting list</h1>
-<table border="1"  cellspacing="0" cellpadding="0">
+<h1 class="secText"><span class="littleText">Waiting List</span</h1>
+<table class="secTab" border="1"  cellspacing="0" cellpadding="0">
     <tr>
         <th>id</th>
         <th>Title</th>

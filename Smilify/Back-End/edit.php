@@ -1,11 +1,15 @@
 <?php
 require_once "checkAdmin.php";
 
+//If the id doesn't exist redirection to ERROR
 if (!isset($_GET['id'])) {
     header('Location: index.php?error=noidprovidededit');
     exit;
 }
+
 require_once "connexion.php";
+
+
 $requete = "SELECT 
   `id`, 
   `title`, 

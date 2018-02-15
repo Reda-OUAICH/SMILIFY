@@ -3,11 +3,11 @@
 
 
 <label for="category">Category: </label>
+
 <select id="category" class="" name="category">
 
-
-
 <?php
+//to get the category of the gif selected, once you click on edit
 $categories = ['- -', 'Animals', 'Trump', 'Creepy', 'Anime', '-'];
 
 foreach ($categories as $category) { ?>
