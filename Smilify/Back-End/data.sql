@@ -7,7 +7,7 @@ CREATE TABLE Gifs (
   `title` VARCHAR(50) NOT NULL,
   `category` VARCHAR(50)NOT NULL,
   `displayable` VARCHAR(5)NOT NULL,
-  `src` VARCHAR(50)NOT NULL,
+  `src` VARCHAR(150)NOT NULL,
    PRIMARY KEY (`id`)
 );
 
@@ -99,7 +99,7 @@ CREATE TABLE NewGifs (
   `title` VARCHAR(50) NOT NULL,
   `category` VARCHAR(50)NOT NULL,
   `displayable` VARCHAR(5)NOT NULL,
-  `src` VARCHAR(100)NOT NULL,
+  `src` VARCHAR(150)NOT NULL,
    PRIMARY KEY (`id`)
 );
 

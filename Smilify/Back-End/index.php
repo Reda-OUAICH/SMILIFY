@@ -42,6 +42,9 @@ $stmt2->execute();
 <head>
     <meta charset="UTF-8">
     <title>Smilify</title>
+    <link rel="stylesheet" href="../Front-End/css/reset.css" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="../Front-End/css/style.css" type="text/css" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,800" rel="stylesheet">
     <style>
         h1{
             text-align: center;
@@ -95,7 +98,7 @@ if (isset($_GET['message'])) {
 }
 ?>
 
-<h1>Smilify</h1>
+<h1 class="mainTitle">Smilify<span class="littleText">administration</span></h1>
 <table border="1"  cellspacing="0" cellpadding="0">
     <tr>
         <th>id</th>
