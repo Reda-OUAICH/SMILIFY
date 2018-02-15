@@ -50,7 +50,7 @@ body {
   font-weight: 100;
   font-size: 22px;
   display: flex;
-  margin: 80px 0 5px 420px;
+  margin: 80px 0 5px 360px;
   text-transform: uppercase;}
 
 
@@ -76,16 +76,17 @@ body {
   font-size: 16px;
   font-family: "Raleway", Arial, sans-serif;
   font-weight: 900;
+  margin: 0 0 0 130px;
 }
 
 .titles {
   font-family: "Raleway", Arial, sans-serif;
-  margin-top: 40px;
+  margin: 40px 0 0 130px;
   font-weight: 900;
 }
 
 .gifContainer {
-  margin-top: 5px;
+  margin: 5px 130px auto;
   display: flex;
   align-items: flex-start; }
 
